@@ -1,0 +1,33 @@
+<div class="container">
+
+    <div class="card wrapper" style=" margin-top: 50px;">
+        <div class="card-header ">
+            <div class="title">
+                ChatCord
+            </div>
+        </div>
+        <div class="card-body" n style="margin: 2px;background-color: rgb(249, 251, 252)">
+
+            <div class="row" style="margin: 4px; ">
+                <div class="col-md-3">
+                    <img src="<%= avata %>" class="rounded-circle" alt="Cinque Terre" width="150" height="150">
+                </div>
+                <div class="col-md-9">
+                    <form action="/room">
+                        <div class="form-group">
+                            <label for="username">Tên đăng nhập</label>
+                            <input type="text" name="username" id="username" class="form-control" value="<%= name %>" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="room">ID Phòng chat</label>
+                            <input type="text" name="room" id="room" class="form-control" value="<%= room %>" />
+                        </div>
+                        <button type="submit" class="btn btn-info btn-lg">Tham gia</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
