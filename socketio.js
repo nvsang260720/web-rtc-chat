@@ -57,7 +57,7 @@ io.on('connection', socket => {
 
         }
         var savedFilename = "/uploads/" + randomString(10) + ext
-        fs.writeFile('../web_chat_rtc/public' + savedFilename, getBase64Image(baseImg.base64), 'base64', function(err) {
+        fs.writeFile(__dirname + '/public' + savedFilename, getBase64Image(baseImg.base64), 'base64', function(err) {
             if (err !== null) {
                 console.log(err)
                 console.log("not send photo")
