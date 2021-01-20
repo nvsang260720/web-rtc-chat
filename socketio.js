@@ -1,9 +1,9 @@
 const io = require('socket.io')()
 const botName = 'ChatCord Bot'
 var fs = require("fs")
-const { formatMessage, formatFile } = require('../utils/messages')
-const { randomString, getBase64Image } = require('../utils/setFile')
-const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('../utils/users')
+const { formatMessage, formatFile } = require('./utils/messages')
+const { randomString, getBase64Image } = require('./utils/setFile')
+const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./utils/users')
 
 let peer = {}
     // Run when client connects
