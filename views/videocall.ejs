@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="container" id="container">
-      <div class="videos" id="video-grid">
-  
-      </div>
+        <div class="videos" id="video-grid">
+
+        </div>
     </div>
     <!--  -->
     <div class="menu-top-right" id="menu-top-right">
-      <div class="time-now" id="time-now">
-        
-      </div>
+        <div class="time-now" id="time-now">
+
+        </div>
     </div>
     <!-- khung chat -->
     <div class="chat" id="frame-users-chat">
-      <div class="title-frame-users-chat">
-        <h3>Chi tiết hội thảo</h3>
-        <ion-icon name="close-outline" id="button-close" onclick="closeFrameUsersChat()"></ion-icon>
-      </div>
-      <div class="tabs">
-        <div class="tabContainer">
-          <div class="tabPeople" id="tabPeople">
-            <span><ion-icon class="iconTab" name="people-outline"></ion-icon> Người dùng</span>
-          </div>
-          <div class="tabChat" id="tabChat">
-            <span><ion-icon class="iconTab" name="chatbubble-ellipses-outline"></ion-icon> Trò chuyện</span>
-          </div>
+        <div class="title-frame-users-chat">
+            <h3>Chi tiết hội thảo</h3>
+            <ion-icon name="close-outline" id="button-close" onclick="closeFrameUsersChat()"></ion-icon>
         </div>
-        <div class="tabPanel">
-          người dùng
-        </div>
-        <div class="tabPanel">
-          <div class="frame-chat">
-            <div class="bottom-editText">
-              <input type="text" id="editTex-chat">
+        <div class="tabs">
+            <div class="tabContainer">
+                <div class="tabPeople" id="tabPeople">
+                    <span><ion-icon class="iconTab" name="people-outline"></ion-icon> Người dùng</span>
+                </div>
+                <div class="tabChat" id="tabChat">
+                    <span><ion-icon class="iconTab" name="chatbubble-ellipses-outline"></ion-icon> Trò chuyện</span>
+                </div>
             </div>
+            <div class="tabPanel">
+                người dùng
+            </div>
+            <div class="tabPanel">
+                <div class="frame-chat">
+                    <div class="bottom-editText">
+                        <input type="text" id="editTex-chat">
+                    </div>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- Bottom hiển thị các button call mic video v.v -->
     <div class="bottom " id="div-bottom">
-      <div class="event-video" >
-        <span id="button-mic"><ion-icon name="mic-outline" id="icon-mic"></ion-icon></span>
-        <span id="button-call"><ion-icon name="call" id="icon-call"></ion-icon></span>
-        <span id="button-videocam"><ion-icon name="videocam-outline" id="icon-videocam"></ion-icon></span>
-      </div>
+        <div class="event-video">
+            <span id="button-mic"><ion-icon name="mic-outline" id="icon-mic"></ion-icon></span>
+            <span id="button-call"><ion-icon name="call" id="icon-call"></ion-icon></span>
+            <span id="button-videocam"><ion-icon name="videocam-outline" id="icon-videocam"></ion-icon></span>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="public/js/bundle.js"></script>
 </body>
-</html>
 
+</html>
